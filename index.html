@@ -215,7 +215,7 @@
         <hr>
         <section>
             <h2>Trabajar colaborativamente</h2>
-            <details>
+            <details open>
                 <summary>Más información...</summary>
                 <div class="content">
                     <p>Suponiendo vamos a trabajar de manera colaborativa, un compañero puede crear el repo.</p>
@@ -234,8 +234,20 @@
                     <img src="./4git.JPG" alt="codigo url github">
                     <p>Y lo pega en su VS code</p>
                     <code>
-                        
+                        git remote add origin https://github.com/&#8203Juana/&#8203repo.git
                     </code>
+                    <p>Ahora, la relación con el repo será esta</p>
+                    <img src="./1git2.JPG" alt="repo remoto agregado">
+                    <p>A su vez, Lautaro quiere tener este proyecto en su github</p>
+                    <p>Así que creará un repositorio en su cuenta de github y lo vinculará como ya sabe hacer</p>
+                    <p>Ahora, el proyecto local donde está trabajando está vinculado a dos repos, el de Juana y el suyo </p>
+                    <img src="./1git3.JPG" alt="repo creado y vinculado">
+                    <p>Puede ejecutar este código en VS code para ver la vinculación</p>
+                    <code>
+                        git remote -v
+                    </code>
+                    <p>Es importante ponerse de acuerdo y dividir las tareas para no pisar código del compañero</p>
+
                 </div>
             </details>
         </section>

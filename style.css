@@ -27,6 +27,10 @@ body {
   details {
     cursor: pointer;
   }
+
+  .content {
+    cursor: initial;
+  }
   
   
   code {
