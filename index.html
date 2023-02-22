@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,196 +8,224 @@
     <title>Github and Firebase</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  
+
     <main class="main">
-      <h1>Github y Firebase</h1>
-      <p>Mis proyectos en la nube</p>
-      <h3>Pasos necesarios y únicos:</h3>
-        <ol>
-          <li>Instalar Git
-            <ul>
-              <li>En la instalación, integrar git con VS code (1º opción que aparezca con VS code)</li>
-            </ul>
-            <img src="http://azurecentriccom.azurewebsites.net/wp-content/uploads/2019/02/Git1.png" alt="git vs code option">
-          </li>
-          <li>Registro en Github</li>
-        </ol>
-      <hr>
-      <section>
-  
-        <h2>Proyecto local a nube</h2>
+        <h1>Github y Firebase</h1>
+        <p>Mis proyectos en la nube</p>
+        <h2>Pasos necesarios y únicos:</h2>
         <details>
-          <summary>
-            Más información...
-          </summary>
-        <p>Estuve trabajando de manera local con mi proyecto, ahora quiero subirlo a github...</p>
-        
-        <h3>Pasos para subir el proyecto:</h3>
-        <ol>
-          
-          <li>Crear repositorio en Github y ...
-            <ul>
-              <li>Copiar el código del recuadro donde hay varias lineas de código (similar a este)
-              </li>
-              <details>
-                <summary>Codigo ejemplo</summary>
-                  <code>
-                  echo "# nombreProyecto" >> README.md
-                    <br>
-                  git init
-                    <br>
-                  git add README.md
-                    <br>
-                  git commit -m "first commit"
-                    <br>
-                  git branch -M main
-                    <br>
-                  git remote add origin&#8203           https://github.com&#8203/UsuarioGit/&#8203nombreProyecto&#8203.git
-                    <br>
-  git push -u origin main
-                  </code>
-              </details>
-            </ul>
-          </li>
-          <li>Abrir el proyecto en VS code</li>
-          <li>Abrir terminal</li>
-          <li>Configuración global de git (Paso único)
-            <ul>
-              <li>
-                <code>
+            <summary>
+                Más información...
+            </summary>
+            <div class="content">
+                <ol>
+                    <li>Instalar Git
+                        <ul>
+                            <li>En la instalación, integrar git con VS code (1º opción que aparezca con VS code)</li>
+                        </ul>
+                        <img src="http://azurecentriccom.azurewebsites.net/wp-content/uploads/2019/02/Git1.png"
+                            alt="git vs code option">
+                    </li>
+                    <li>Registro en Github</li>
+                </ol>
+            </div>
+        </details>
+        <hr>
+        <section>
+
+            <h2>Proyecto local a nube</h2>
+            <details>
+                <summary>
+                    Más información...
+                </summary>
+                <div class="content">
+                    <p>Estuve trabajando de manera local con mi proyecto, ahora quiero subirlo a github...</p>
+
+                    <h3>Pasos para subir el proyecto:</h3>
+                    <ol>
+
+                        <li>Crear repositorio en Github y ...
+                            <ul>
+                                <li>Copiar el código del recuadro donde hay varias lineas de código (similar a este)
+                                </li>
+                            </ul>
+                        </li>
+                        <details>
+                            <summary>Codigo ejemplo</summary>
+                            <div class="content">
+                                <code>
+                                echo "# nombreProyecto" >> README.md
+                                    <br>
+                                git init
+                                    <br>
+                                git add README.md
+                                    <br>
+                                git commit -m "first commit"
+                                    <br>
+                                git branch -M main
+                                    <br>
+                                git remote add origin https://github.com&#8203/UsuarioGit/&#8203nombreProyecto&#8203.git
+                                    <br>
+                                git push -u origin main
+                                </code>
+                            </div>
+                        </details>
+                        <li>Abrir el proyecto en VS code</li>
+                        <li>Abrir terminal</li>
+                        <li>Configuración global de git (Paso único)
+                            <ul>
+                                <li>
+                                    <code>
                   git config user.name "nombreUsuarioGithub"
                 </code>
-              </li>
-              <li>
-                <code>
+                                </li>
+                                <li>
+                                    <code>
                   git config user.email "email
                   &#8203@email&#8203.com"
                 </code>
-              </li>
-            </ul>
-          </li>
-          <li>Pegar el código copiado en el paso nº 1(solo una vez por proyecto)</li>
-          <li>Subir el proyecto local con los siguientes comandos
-            <ol>
-              <li>
-                <code>git add .</code>
-              </li>
-              <li>
-                <code>git commit -m "subiendo proyecto local"</code>
-              </li>
-              <li>
-                <code>git push -u origin main</code>
-              </li>
-            </ol>
-          </li>
-          <h3>Actualizar cambios en el repositorio</h3>
-          <li>Repetir paso nº 6
-            <ol>
-              <li>
-                <code>git add .</code>
-              </li>
-              <li>
-                <code>git commit -m "modificando header"</code>
-              </li>
-              <li>
-                <code>git push -u origin main</code>
-              </li>
-            </ol>
-          </li>
-        </ol>
-        </details>
-      </section>
-      <hr>
-      <section>
-        <h2>Otros Comandos</h2>
-        <details>
-        <summary>Más información...</summary>
-        <p>Saber si el proyecto local está vinculado al repositorio de github</p>
-        <code>
-          git remote -v
-        </code>
-        <p>Aparecerán 2 lineas de código, una con (fetch) y otra con (push)</p>
-        <code class="ejemplo gris">
-          origin  https://github.com/usuario/repo.git (fetch)
-          <br>
-          origin  https://github.com/usuario/repo.git (push) 
-        </code>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>Pegar el código copiado en el paso nº 1(solo una vez por proyecto)</li>
+                        <li>Subir el proyecto local con los siguientes comandos
+                            <ol>
+                                <li>
+                                    <code>git add .</code>
+                                </li>
+                                <li>
+                                    <code>git commit -m "subiendo proyecto local"</code>
+                                </li>
+                                <li>
+                                    <code>git push -u origin main</code>
+                                </li>
+                            </ol>
+                        </li>
+                        <h3>Actualizar cambios en el repositorio</h3>
+                        <li>Repetir paso nº 6
+                            <ol>
+                                <li>
+                                    <code>git add .</code>
+                                </li>
+                                <li>
+                                    <code>git commit -m "modificando header"</code>
+                                </li>
+                                <li>
+                                    <code>git push -u origin main</code>
+                                </li>
+                            </ol>
+                        </li>
+                    </ol>
+                </div>
+            </details>
+        </section>
         <hr>
-        <p>Desvincular proyecto de github</p>
-        <code>
-          git remote remove nombreRemoto 
-        </code>
-        <p>Otra forma es borrar la carpeta oculta ".git" dentro de la carpeta local</p>
+        <section>
+            <h2>Otros Comandos</h2>
+            <details>
+                <summary>Más información...</summary>
+                <div class="content">
+                    <p>Saber si el proyecto local está vinculado al repositorio de github</p>
+                    <code>
+                        git remote -v
+                    </code>
+                    <p>Aparecerán 2 lineas de código, una con (fetch) y otra con (push)</p>
+                    <code class="ejemplo gris">
+                        origin  https://github.com/usuario/repo.git (fetch)
+                    <br>
+                        origin  https://github.com/usuario/repo.git (push) 
+                    </code>
+                    <hr>
+                    <p>Desvincular proyecto de github</p>
+                    <code>
+                        git remote remove nombreRemoto 
+                    </code>
+                    <p>Otra forma es borrar la carpeta oculta ".git" dentro de la carpeta local</p>
+                    <hr>
+                    <p>Saber estado de los archivos</p>
+                    <code>
+                        git status
+                    </code>
+                    <p>Los archivos pueden aparecer en color <span class="rojo">rojo</span>(sin stage) y en <span
+                            class="verde">verde</span>(en stage)</p>
+                    <code class="ejemplo rojo">
+                        modified:   cv_online/index.html
+                    </code>
+                    <p>Después de hacer un git add .</p>
+                    <code class="ejemplo verde">
+                        modified:   cv_online/index.html
+                    </code>
+                    <hr>
+                    <p>Saber en qué rama estas parado</p>
+                    <code>
+                        git branch --list
+                    </code>
+                    <p>Aparecerá un asterisco * en la rama actual</p>
+                    <code class="ejemplo gris">
+                    * <span class="verde">main</span>
+                    </code>
+                    <hr>
+                    <p>Crear una rama</p>
+                    <code>
+                        git branch nombreRamaNueva
+                    </code>
+                    <p>Sirve cuando queremos crear una nueva funcionalidad sin afectar la rama principal</p>
+                    <hr>
+                    <p>Pararse en otra rama</p>
+                    <code>
+                        git checkout nombreRama
+                    </code>
+                    <hr>
+                    <p>Modificar rama</p>
+                    <code>
+                        git branch -M nuevoNombre
+                    </code>
+                    <p>Se necesita estar parado sobre la rama a modificar</p>
+                    <hr>
+                    <p>Eliminar rama</p>
+                    <code>
+                        git branch -D nombreRama
+                    </code>
+                    <hr>
+                    <p>Unir ramas</p>
+                    <p>Debemos estar parados en la rama vieja para unir los cambios de la rama nueva</p>
+                    <code>
+                        git merge ramaNueva
+                    </code>
+                    <hr>
+                    <p>Conectar local con remoto</p>
+                    <code>
+                        git remote add origin urlRemoto
+                    </code>
+                    <hr>
+                    <p>Traer los cambios de un repositorio</p>
+                    <code>
+                        git pull origin main
+                    </code>
+                    <hr>
+                    <p>Clonar repositorio</p>
+                    <code>
+                        git clone urlDelRepositorio directorio
+                    </code>
+                    <hr>
+            </details>
+            </div>
+        </section>
         <hr>
-        <p>Saber estado de los archivos</p>
-        <code>
-          git status
-        </code>
-        <p>Los archivos pueden aparecer en color <span class="rojo">rojo</span>(sin stage) y en <span class="verde">verde</span>(en stage)</p>
-        <code class="ejemplo rojo">
-          modified:   cv_online/index.html
-        </code>
-        <p>Después de hacer un git add .</p>
-        <code class="ejemplo verde">
-          modified:   cv_online/index.html
-        </code>
+        <section>
+            <h2>Trabajar colaborativamente</h2>
+            <details>
+                <summary>Más información...</summary>
+                <div class="content">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo, molestias illum optio ab dolor et asperiores? Doloremque cupiditate blanditiis neque laboriosam, reprehenderit ratione nisi sunt impedit, rerum quod eum maiores.</p>
+                </div>
+            </details>
+        </section>
         <hr>
-        <p>Saber en qué rama estas parado</p>
-        <code>
-          git branch --list
-        </code>
-        <p>Aparecerá un asterisco * en la rama actual</p>
-        <code class="ejemplo gris">
-          * <span class="verde">main</span>
-        </code>
-        <hr>
-        <p>Crear una rama</p>
-        <code>
-          git branch nombreRamaNueva
-        </code>
-        <p>Sirve cuando queremos crear una nueva funcionalidad sin afectar la rama principal</p>
-        <hr>
-        <p>Pararse en otra rama</p>
-        <code>
-          git checkout nombreRama
-        </code>
-        <hr>
-        <p>Modificar rama</p>
-        <code>
-          git branch -M nuevoNombre
-        </code>
-        <p>Se necesita estar parado sobre la rama a modificar</p>
-        <hr>
-        <p>Eliminar rama</p>
-        <code>
-          git branch -D nombreRama
-        </code>
-        <hr>
-        <p>Unir ramas</p>
-        <p>Debemos estar parados en la rama vieja para unir los cambios de la rama nueva</p>
-        <code>
-          git merge ramaNueva
-        </code>
-        <hr>
-        <p>Conectar local con remoto</p>
-        <code>
-          git remote add origin urlRemoto
-        </code>
-        <hr>
-        <p>Traer los cambios de un repositorio</p>
-        <code>
-          git pull origin main
-        </code>
-        <hr>
-        <p>Clonar repositorio</p>
-        <code>
-          git clone urlDelRepositorio directorio
-        </code>
-        <hr>
-      </details>
-      </section>
     </main>
-  
-  </body>
+    <script src="./script.js"></script>
+</body>
+
 </html>
