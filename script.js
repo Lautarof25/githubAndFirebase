@@ -51,7 +51,7 @@ class Accordion {
         // Set the keyframes from the startHeight to endHeight
         height: [startHeight, endHeight]
       }, {
-        duration: 400,
+        duration: 1000,
         easing: 'ease-out'
       });
       
@@ -89,7 +89,7 @@ class Accordion {
         // Set the keyframes from the startHeight to endHeight
         height: [startHeight, endHeight]
       }, {
-        duration: 400,
+        duration: 1000,
         easing: 'ease-out'
       });
       // When the animation is complete, call onAnimationFinish()

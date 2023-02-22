@@ -23,6 +23,10 @@ body {
   ol > li::marker {
     color: yellow;
   }
+
+  details {
+    cursor: pointer;
+  }
   
   
   code {
