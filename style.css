@@ -1,0 +1,55 @@
+
+
+body {
+    font-family: helvetica, san-serif;
+    background-color: steelblue;
+    color: white;
+    
+  }
+  
+  img {
+    max-width: 100%;
+  }
+  
+  main {
+    text-shadow: 1px 1px 3px black;
+    max-width: 75ch;
+    margin: 0 auto;
+  }
+  
+  ul li::marker {
+    color: red;
+  }
+  
+  ol > li::marker {
+    color: yellow;
+  }
+  
+  
+  code {
+    display: block;
+    background-color: #fff;
+    padding: 1rem;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    width: fit-content;
+    color: blue;
+    text-shadow: none;
+  }
+  
+  .ejemplo {
+    background-color: black;
+  }
+  
+  .gris {
+    color: lightgray;
+  }
+  
+  .verde {
+    color: palegreen;
+  }
+  
+  .rojo {
+    color: red;
+  }
+  
