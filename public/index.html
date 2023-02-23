@@ -12,7 +12,7 @@
 <body>
 
     <main class="main">
-        <h1>Github y Firebase</h1>
+        <h1>Github</h1>
         <p>Mis proyectos en la nube</p>
         <h2>Pasos necesarios y únicos:</h2>
         <details>
@@ -34,7 +34,6 @@
         </details>
         <hr>
         <section>
-
             <h2>Proyecto local a nube</h2>
             <details>
                 <summary>
@@ -215,7 +214,7 @@
         <hr>
         <section>
             <h2>Trabajar colaborativamente</h2>
-            <details open>
+            <details>
                 <summary>Más información...</summary>
                 <div class="content">
                     <p>Suponiendo vamos a trabajar de manera colaborativa, un compañero puede crear el repo.</p>
@@ -255,6 +254,97 @@
             </details>
         </section>
         <hr>
+        <h1>Firebase</h1>
+        <p>Mis proyectos en un hosting</p>
+        <h2>Pasos necesarios y únicos:</h2>
+        <details>
+            <summary>
+                Más información...
+            </summary>
+            <div class="content">
+                <ol>
+                    <li>Registro en Firebase</li>
+                    <li>Instalar Node.js en versión LTS
+                        <ul>
+                            <li>Ejecutar PowerShell de windows como administrador</li>
+                            <li>Ejecutar el siguiente comando</li>
+                            <code>Get-ExecutionPolicy</code>
+                            <p>Dirá que está como "Resticted"</p>
+                            <li>Ejecutar:</li>
+                            <code>Set-ExecutionPolicy Unrestricted</code>
+                            <p>Ahora corremos de vuelta el primer comando y veremos "Unrestricted"</p>
+                        </ul>
+                    </li>
+                    <li>Instalar CLI en VS code</li>
+                    <code>npm install-g firebase-tools</code>
+                    <li>firebase login</li>
+                    <p>Una vez vinculada la cuenta, ya no es necesario para otros proyectos</p>
+                </ol>
+            </div>
+        </details>
+        <section>
+            <h2>Creando proyecto</h2>
+            <details>
+                <summary>
+                    Más información...
+                </summary>
+                <div class="content">
+                    <ul>
+                        <li>Nos vamos a la consola de firebase</li>
+                        <li>Agregamos un nuevo proyecto y ponemos un nombre</li>
+                        <li>En nuestro VS code, instalamos CLI</li>
+                        <code>npm install-g firebase-tools</code>
+                        <li>En firebase, hacemos click en el icono con simbolo &#60;/&#62;</li>
+                        <li>Damos un nombre a la app y Registrar</li>
+                        <li>Damos en usar etiqueta y copiamos el SDK</li>
+                        <li>Vamos a nuestro proyecto y pegamos el script antes del cierre de body</li>
+                        <li>En la consola de firebase, veremos la webapp</li>
+                        <li>Damos click en ella y configuración</li>
+                        <li>Vamos a vincularlo al proyecto para poder efectuar el hosting</li>
+                        <code>Vincular a un sitio de Firebase Hosting</code>
+                        <li>Luego, administrar en Hosting y comenzar</li>
+                        <li>Ejecutamos los siguientes códigos:
+                            <ol>
+                                <li>
+                                    <code>firebase login</code>
+                                </li>
+                                <li>Allow Firebase to collect CLI... Y</li>
+                                <li>
+                                    <p>Iniciamos el proyecto</p>
+                                    <code>firebase init</code>
+                                    <ol>
+                                        <li>Proceed? Y</li>
+                                        <li>Elegimos el hosting con flechas arriba y abajo y barra espaciadora</li>
+                                        <code>(*) Hosting: Configure files for Firebase...</code>
+                                        <li>Seleccionamos nuestro proyecto y avanzamos</li>
+                                        <li>What a public directory...?Enter</li>
+                                        <li>Configure as a single-app...? Y</li>
+                                        <li>Set up automatic...? N</li>
+                                    </ol>
+                                </li>
+                                <li>Una vez hecho esto, ponemos todas nuestras carpetas del proyecto dentro de public
+                                </li>
+                                <p>Nos pedirá reemplazar el index.html dentro de public y damos que si</p>
+                                <li>Ahora deployamos</li>
+                                <code>firebase deploy</code>
+                                <p>Nos dará un link de la aplicación web</p>
+                            </ol>
+                        </li>
+                        <h2>Subiendo proyecto deployado a Github</h2>
+                        <ul>
+                            <li>Debemos quitar la parte de las contraseñas del script y guardarlos en un txt con el
+                                nombre de
+                                devops en un repo privado</li>
+                            <li>Cada vez que vayamos a actualizar la aplicación debemos poner las contraseñas, y
+                                sacarlas cuando subimos los
+                                cambios a github</li>
+                        </ul>
+                    </ul>
+                </div>
+            </details>
+        </section>
+        <hr>
+
     </main>
     <script src="./script.js"></script>
     <script type="module">
