@@ -219,9 +219,11 @@
                 <summary>Más información...</summary>
                 <div class="content">
                     <p>Suponiendo vamos a trabajar de manera colaborativa, un compañero puede crear el repo.</p>
-                    <p>Juana crea la carpeta donde se alojará el proyecto y la vincula con un repo de github en su cuenta.</p>
+                    <p>Juana crea la carpeta donde se alojará el proyecto y la vincula con un repo de github en su
+                        cuenta.</p>
                     <img src="./1git.JPG" alt="repo local">
-                    <p>Ahora, Lautaro quiere trabajar en ese mismo repositorio, tomando los cambios de juana y subiendo los suyos</p>
+                    <p>Ahora, Lautaro quiere trabajar en ese mismo repositorio, tomando los cambios de juana y subiendo
+                        los suyos</p>
                     <p>Juana va a agregar a colaboradores a Lautaro.</p>
                     <p>Va al repositorio en github > Settings > Collaborators > Add people</p>
                     <p>Ahí agrega el usuario o mail de Lautaro.</p>
@@ -240,7 +242,8 @@
                     <img src="./1git2.JPG" alt="repo remoto agregado">
                     <p>A su vez, Lautaro quiere tener este proyecto en su github</p>
                     <p>Así que creará un repositorio en su cuenta de github y lo vinculará como ya sabe hacer</p>
-                    <p>Ahora, el proyecto local donde está trabajando está vinculado a dos repos, el de Juana y el suyo </p>
+                    <p>Ahora, el proyecto local donde está trabajando está vinculado a dos repos, el de Juana y el suyo
+                    </p>
                     <img src="./1git3.JPG" alt="repo creado y vinculado">
                     <p>Puede ejecutar este código en VS code para ver la vinculación</p>
                     <code>
@@ -254,6 +257,20 @@
         <hr>
     </main>
     <script src="./script.js"></script>
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "firebase/app";
+        import { getAnalytics } from "firebase/analytics";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+    </script>
 </body>
 
 </html>
