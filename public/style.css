@@ -1,62 +1,81 @@
-
-
 body {
-    font-family: helvetica, san-serif;
-    background-color: steelblue;
-    color: white;
-  }
-  
-  img {
-    max-width: 100%;
-  }
-  
-  main {
-    text-shadow: 1px 1px 3px black;
-    max-width: 75ch;
-    margin: 0 auto;
-  }
-  
-  ul li::marker {
-    color: red;
-  }
-  
-  ol > li::marker {
-    color: yellow;
-  }
+  font-family: helvetica, san-serif;
+  background-color: steelblue;
+  color: white;
+  margin: 0;
+}
 
-  details {
-    cursor: pointer;
-  }
+img {
+  max-width: 100%;
+  
+}
+h1,main > div > p {
+  text-align: center;
+}
 
-  .content {
-    cursor: initial;
-  }
-  
-  
-  code {
-    display: block;
-    background-color: #fff;
-    padding: 1rem;
-    margin-bottom: 5px;
-    border-radius: 5px;
-    width: fit-content;
-    color: blue;
-    text-shadow: none;
-  }
-  
-  .ejemplo {
-    background-color: black;
-  }
-  
-  .gris {
-    color: lightgray;
-  }
-  
-  .verde {
-    color: palegreen;
-  }
-  
-  .rojo {
-    color: red;
-  }
-  
+h1 img {
+  background-color: white;
+  border-radius: 50%;
+}
+
+h2 {
+  background-color: lightblue;
+}
+
+main {
+  text-shadow: 1px 1px 3px black;
+  max-width: 75ch;
+  margin: 0 auto;
+}
+
+main > div:first-child h1 {
+  background-color: black;
+}
+h1{
+  background-color: orange;
+  margin-top: 0;
+}
+
+ul li::marker {
+  color: red;
+}
+
+ol>li::marker {
+  color: yellow;
+}
+
+details {
+  cursor: pointer;
+}
+
+.content {
+  cursor: initial;
+}
+
+
+code {
+  display: block;
+  background-color: #fff;
+  padding: 1rem;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  width: fit-content;
+  color: blue;
+  text-shadow: none;
+}
+
+.ejemplo {
+  background-color: black;
+}
+
+.gris {
+  color: lightgray;
+}
+
+.verde {
+  color: palegreen;
+}
+
+.rojo {
+  color: red;
+}
